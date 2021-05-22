@@ -38,4 +38,28 @@ To connect your local device to Git
 11- to add ssh key follow the steps in github
 
 --------------------------------------------------------
+to undo the changes
+
+*to undo chages in local device
+edit a txt file 
+git add .
+git commit -m "msg"
+git log --oneline  ............... to see the last commit with the hexadecimal number next to it
+git reset --hard "hexadecimal number" ........... to undo the changes
+
+*to undo changes in github
+git push
+git revert HEAD ............to undo changes in github
+
+-----------------------------------------------
+to know what cahnges happened in the file
+git diff "filename"
+
+-------------------------------------
+
+braches
+
+git branch -m "old name" "new name" .......... to change branch name
+git branch -d "branch name" .......... to delete branch
+git branch -a ......... to show all branches
 
