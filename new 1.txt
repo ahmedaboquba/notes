@@ -1,0 +1,41 @@
+ git config --global user.name "test"
+ git config --global user.email "test@hotmail.com"
+git init
+git status 
+git diff
+git add filename
+git commit -m "msg you put"
+git log ............................. shows all commit
+git log --author="test@hotmail" ..........................to show the commits of a specific author 
+---------------------------
+to create a new branch && merge 
+
+git branch .............. to see which branch you are in
+git push origin develop ............ to add a barnch named develop in git hub
+git branch "branchname" ................... to add a new branch
+git switch "branchname" .......... to switch to the barnch you want to work on
+
+to merge 
+git merge develop
+git add .
+git commit    ............... no need for message or -m
+git push
+
+-----------------------------------
+To connect your local device to Git
+"don't forget to put the first two commands in this file 'git config' .... "
+
+1- make repository on github 
+2- ter: git clone -b main "https:........."
+3- ter: ll    ......... to see the folder in your pc
+4- ter : cd "foldername"
+5- add file in github and give it a name
+6- ter: git pull ........... to get the file from github to your pc 
+7- ter: git status ........... to see the status of the file if it got modified
+8- ter: git commit -am "any message" ........... to add and commit a file
+9- ter: git push .......... to send the file github
+10- write your email and password of your github after git push "we didnt need to put password in git pull because repository was piblic"
+11- to add ssh key follow the steps in github
+
+--------------------------------------------------------
+
