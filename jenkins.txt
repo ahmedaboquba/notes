@@ -1,2 +1,37 @@
 for jenkins notes
+first i made a cloud server cloudocean
+-connect to the ubuntu server i made via ssh
+command : ssh root@ipaddr
+-add java8 on ubuntu server 
+command: sudo add-apt-repository ppa:webupd8team/java
+	 sudo apt-get update
+	 sudo apt install openjdk-8-jdk openjdk-8-jre
+	 
+-to download jenkins on ubuntu server 
+links: https://www.jenkins.io/doc/book/installing/linux/
+	https://phoenixnap.com/kb/install-jenkins-ubuntu
 
+-to view that jenkins is active on the machine
+command: systemctl status jenkins
+
+-to open jenkins 
+find what your machine ip addr and open it on a browser with port 8080
+a web page will appear to enter the password that is requested go to the machine 
+and type: cat /var/lib/jenkins/secrets/initialAdminPassword 
+copy the password to the browser and continue the procuder
+
+to start and stop jenkins
+command: systemctl start/stop jenkins
+
+to install GIT on jenkins go to manage plugins from manage jenkins then search for "git integration"
+
+to configure the java and git on jenkins go to Global configuration tool and add each one of them manually by adding there location from the machine "search for java/Git directory"
+
+to add a new maven project on jenkins: 
+1- go to new item 
+2- connect to github source code 
+3-from build add maven build 
+4- press advance to add the path of the pom.xml from github 
+
+to set the time to trigger a build go to Poll SCM and put a schedule 
+	 
